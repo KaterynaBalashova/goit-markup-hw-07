@@ -48,15 +48,25 @@ img {
 }
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .container {
-    width: 1158px;
+    width: 426px;
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
+}
+
+.subtitle {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--accent-color);
+    margin-bottom: 72px;
 }
 
 .visually-hidden {
@@ -203,19 +213,19 @@ body {
     background-size: cover;
     max-width: 1440px;
     margin: 0 auto;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     text-align: center;
 }
 
 .main-title {
-    max-width: 496px;
-    font-size: 56px;
-    line-height: 1.07;
+    max-width: 320px;
+    font-size: 36px;
+    line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--color-white);
-    margin-bottom: 48px;
+    margin-bottom: 72px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -252,16 +262,16 @@ body {
 }
 
 .feature-list {
-    display: flex;
-    gap: var(--gap-24);
+    display: block;
 }
 
 .feature-item {
-    width: calc((100% - 72px)/4);
+    width: 396px;
+    margin-bottom: 72px;
 }
 
 .icon-feature-wrap {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background: var(--color-accent-footer);
@@ -272,27 +282,19 @@ body {
 
 .feature-title {
     font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+    text-align: center;
     color: var(--accent-color);
     margin-bottom: 8px;
 }
 
 .feature-desc {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-}
-
-.subtitle {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--accent-color);
-    margin-bottom: 72px;
 }
 
 /***** WHAT ARE WE DOING *****/
