@@ -139,10 +139,11 @@ body {
 
 .btn-open-menu {
     background-color: transparent;
+    border: none;
 }
 
 .icon-open-menu {
-    fill: #2E2F42;
+    stroke: #2E2F42;
 }
 
 .mob-menu {
@@ -172,14 +173,14 @@ body {
     width: 24px;
     height: 24px;
     background-color: var(--color-footer-text);
-    /* opacity: 0.1; */
+    opacity: 0.1;
     border: 1px solid var(--accent-color);
     border-radius: 50%;
     margin-bottom: 32px;
 }
 
 .icon-close-menu {
-    fill: var(--accent-color);
+    stroke: var(--accent-color);
 }
 
 .mob-nav-item:not(:last-child) {
@@ -313,10 +314,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 72px;
-}
-
-.feature-item {
-    /* width: 356px; */
 }
 
 .icon-feature-wrap {
