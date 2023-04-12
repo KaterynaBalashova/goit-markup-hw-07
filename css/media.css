@@ -120,6 +120,8 @@
         color: var(--hover-color);
     }
 
+/* HERO */
+
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tab.jpg);
         max-width: 768px;
@@ -140,7 +142,7 @@
         margin-bottom: 36px;
     }
 
-    /* FEATURE TABLET*/
+/* FEATURE TABLET*/
 
     .feature-list {
         display: flex;
@@ -175,7 +177,7 @@
         width: calc((100% - 24px) / 2);
     }
 
-    /* CUSTOMERS */
+/* CUSTOMERS */
 
     .customers-section > .container {
         width: 582px;
@@ -189,7 +191,7 @@
         width: 168px;
     }
 
-    /* FOOTER */
+/* FOOTER */
 
     .page-footer > .container {
         width: 582px;
@@ -236,7 +238,15 @@
     .subscribe-btn {
         margin: 0;
     }
+
+/* BACKDROP */
+
+    .modal {
+        max-width: 408px;
+    }
+
 }
+
 
 /********** DESKTOP **********/
 
@@ -367,5 +377,10 @@
 
     .footer-social {
         margin-right: 80px;
+    }
+
+/* MODAL */
+
+    .modal {
     }
 }

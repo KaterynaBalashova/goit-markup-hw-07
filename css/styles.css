@@ -148,6 +148,7 @@ body {
 
 .mob-menu {
     position: fixed;
+    z-index: 100;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -165,22 +166,20 @@ body {
 .btn-close-menu {
     position: absolute;
     top: 24px;
-    left: 380px;
+    right: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
     width: 24px;
     height: 24px;
-    background-color: var(--color-footer-text);
+    background-color: #E7E9FC;
+    border: 1px solid #2E2F42;
     opacity: 0.1;
-    border: 1px solid var(--accent-color);
     border-radius: 50%;
-    margin-bottom: 32px;
 }
 
 .icon-close-menu {
-    stroke: var(--accent-color);
+    color: var(--accent-color);
 }
 
 .mob-nav-item:not(:last-child) {
@@ -194,6 +193,14 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--accent-color);
+}
+
+.studio-link {
+    color: var(--hover-color);
+}
+
+.portfolio-link {
+    color: var(--hover-color);
 }
 
 .mob-menu-list {
@@ -321,7 +328,7 @@ body {
 }
 
 .feature-title {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -436,7 +443,7 @@ body {
 }
 
 .customers-item {
-    width: 190px;
+    width: calc((100% - 16px) / 2);
     height: 88px;
 }
 
@@ -553,7 +560,7 @@ body {
 }
 
 .footer-subscribe {
-    width: 398px;
+    width: 100%;
 }
 
 .footer-input {
@@ -639,8 +646,9 @@ body {
     left: 50%;
     padding: 32px;
     padding-top: 72px;
-    width: 408px;
-    min-height: 576px;
+    max-width: 392px;
+    width: calc(100% - 36px);
+    height: auto;
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -654,12 +662,11 @@ body {
 
 .modal-close {
     position: absolute;
-    top: 32px;
-    left: 360px;
+    top: 24px;
+    right: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
     width: 24px;
     height: 24px;
     background-color: var(--color-footer-text);
@@ -684,8 +691,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--accent-color);
 }
 
 .modal-form-label {
@@ -799,7 +805,6 @@ body {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
-    letter-spacing: 0.04em;
     color: var(--color-light-slate);
     margin-bottom: 24px;
 }
@@ -853,7 +858,7 @@ body {
     color: var(--logo-btn-color);
     border: 1px solid var(--color-footer-text);
     border-radius: 4px;
-    padding: 12px 24px;
+    padding: 8px 16px;
     transition-property: background-color, color, box-shadow, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -869,12 +874,12 @@ body {
 
 .project-btn-list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
     align-items: flex-start;
     padding: 0px;
     gap: var(--gap-24);
-    margin-bottom: 72px;
+    margin-bottom: 48px;
 }
 
 .project-card-link {
@@ -897,12 +902,12 @@ body {
 
 .project-list {
     display: flex;
-    flex-wrap: wrap;
-    gap: 48px 24px;
+    flex-direction: column;
+    gap: 48px;
 }
 
 .project-item {
-    width: calc((100% - 48px)/3);
+    width: 100%;
 }
 
 .project-card-link:hover .overlay,
