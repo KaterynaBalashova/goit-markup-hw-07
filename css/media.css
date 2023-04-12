@@ -245,6 +245,32 @@
         max-width: 408px;
     }
 
+/* PORTFOLIO */
+
+    .projects-section {
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+
+    .project-btn-list {
+        justify-content: center;
+        margin-bottom: 64px;
+    }
+
+    .project-btn{
+        padding: 12px 24px;
+    }
+
+    .project-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+
+    .project-item {
+        width: calc((100% - 24px) / 2);
+    }
+
 }
 
 
@@ -379,8 +405,22 @@
         margin-right: 80px;
     }
 
-/* MODAL */
+/* PORTFOLIO */
 
-    .modal {
+    .projects-section {
+        padding-top: 100px;
     }
+
+    .project-btn-list {
+        margin-bottom: 72px;
+    }
+
+    .project-list {
+        gap: 48px 24px;
+    }
+
+    .project-item {
+        width: calc((100% - 48px) / 3);
+    }
+       
 }

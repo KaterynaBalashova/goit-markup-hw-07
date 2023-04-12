@@ -172,9 +172,8 @@ body {
     align-items: center;
     width: 24px;
     height: 24px;
-    background-color: #E7E9FC;
-    border: 1px solid #2E2F42;
-    opacity: 0.1;
+    background-color: rgba(231, 233, 252, 0.1);
+    border: 1px solid var(--accent-color);
     border-radius: 50%;
 }
 
@@ -897,7 +896,8 @@ body {
 /***** PROJECTS LIST *****/
 
 .projects-section {
-    padding-top: 96px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .project-list {
